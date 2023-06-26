@@ -11,6 +11,7 @@ you may consult his site for reference
 ( http://feedparser.org/docs/reference.html )
 
 Usage:
+```lua
 local feedparser=require("feedparser")
 -- note that for Lua < 5.3, the require exports a global "feedparser"
 -- In 5.3 and later, it does not.
@@ -70,10 +71,11 @@ local parsed = feedparser.parse(xml_string, optional_base_url)
 		...
 	},
 }
-
+```
 
 The following will NOT appear in the parsed feed table:
 
+```
 feed.info
 feed.info_detail
 feed.title_detail
@@ -103,3 +105,4 @@ modified
 headers
 bozo
 bozo_exception
+```
