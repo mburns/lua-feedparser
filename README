@@ -64,7 +64,7 @@ local parsed = feedparser.parse(xml_string, optional_base_url)
 			title="The Exciting conclusion of Atom-Powered Robots Run Amok",
 			summary="Some text.",
 			"contributors"={
-				--if any. othersie, empty table.
+				--if any. Otherwise, empty table.
 			},
 		},
 		...
